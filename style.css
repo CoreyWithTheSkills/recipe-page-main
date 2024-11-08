@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins&family=Roboto:wght@400;700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&family=Young+Serif&display=swap');
+
+*{
+    font-family: "Outfit";
+}
+
+:root{
+--White: hsl(0, 0%, 100%);
+--Stone1: hsl(30, 54%, 90%);
+--Stone2: hsl(30, 18%, 87%);
+--Stone3: hsl(30, 10%, 34%);
+--Stone4: hsl(24, 5%, 18%);
+--Brown: hsl(14, 45%, 36%);
+--Rose1: hsl(332, 51%, 32%);
+--Rose2: hsl(330, 100%, 98%);
+}
+
+h1, h2{
+    font-family: "Young Serif";
+}
+
+h2{
+    color: var(--Brown);
+}
+
+span{
+    color: var(--Rose1);
+}
+
+body{
+    background-color: var(--Stone1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    width: 800px;
+    background-color: var(--White);
+    border-radius: 1rem;
+    padding: 25px;
+}
+
+.container img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.container-preparation-time{
+    background-color: var(--Rose2);
+    border-radius: 1rem;
+    padding: 15px;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 1rem;
+   }
+
+ .attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+
+.line{
+    border: 1px solid var(--Stone2);
+}
+
+.nutrition ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid  hsl(30, 18%, 87%);
+    padding: 0.5rem 0;
+}
+
+.nutrition ul li:last-child {
+    border-bottom: none;
+}
+
+.nutrition span {
+    color: var(--Brown);
+}
+
+@media (max-width: 768px) {
+.container{
+    margin: 5rem auto 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 300px;
+}
+
+h1{
+    font-size: 48px;
+}
+
+img{
+    border-radius: 1rem;
+}
+}
